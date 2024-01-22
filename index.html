@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+
+    <!-- Tailwind & Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/08083bbda1.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+
+    <header class="container mx-auto mt-12 w-11/12 lg:w-10/12">
+
+        <!-- Navbar section -->
+        <div class="navbar p-0 bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost pl-0 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <h1 class="text-4xl gap-0 text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-base text-[#424247]">
+                    <li><a class="text-[#FF4240]">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a href=""><i class="fa-solid fa-magnifying-glass hidden lg:flex mr-12 text-[#89898B]"></i></a>
+                <a class="btn text-xl font-bold bg-[#FF4240] text-white">Get Ticket</a>
+            </div>
+        </div>
+        
+        <!-- Slider Section -->
+
+        <div class="carousel w-full mt-12">
+            <!-- Slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full lg:h-[550px]">
+              <img src="Images/1.png" class="w-full"/>
+              <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
+                <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              </div>
+            </div> 
+            <!-- Slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full lg:h-[550px]">
+              <img src="Images/slider2.jpg" class="w-full rounded-2xl"/>
+              <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
+                <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              </div>
+            </div> 
+            <!-- Slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full lg:h-[550px]">
+              <img src="Images/slider3.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
+                <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-[500px] lg:h-[165px] lg:absolute rounded-2xl mt-4 lg:-mt-52 lg:ml-24 lg:left-1/2 p-8 bg-[#131318]">
+            <h4 class="text-white text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h4>
+            <p class="text-gray-500 lg:text-base mt-4">Thrilling video game capturing ice hockey excitement. Customize players, score epic goals, and dominate the rink </p>
+        </div>
+    </header>
+
+</body>
+
+</html>
