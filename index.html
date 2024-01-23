@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
+    <link rel="stylesheet" href="Styles/style.css">
 
     <!-- Tailwind & Daisy Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -20,7 +21,7 @@
     <script src="https://kit.fontawesome.com/08083bbda1.js" crossorigin="anonymous"></script>
 
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -50,7 +51,8 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <h1 class="text-4xl gap-0 text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</h1>
+                <h1 class="text-4xl gap-0 text-[#131318] font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s
+                </h1>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-base text-[#424247]">
@@ -66,40 +68,123 @@
                 <a class="btn text-xl font-bold bg-[#FF4240] text-white">Get Ticket</a>
             </div>
         </div>
-        
+
         <!-- Slider Section -->
 
         <div class="carousel w-full mt-12">
             <!-- Slider 1 -->
             <div id="slide1" class="carousel-item relative w-full lg:h-[550px]">
-              <img src="Images/1.png" class="w-full"/>
-              <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
-                <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-                <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
-              </div>
-            </div> 
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
+                    <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                </div>
+            </div>
             <!-- Slider 2 -->
             <div id="slide2" class="carousel-item relative w-full lg:h-[550px]">
-              <img src="Images/slider2.jpg" class="w-full rounded-2xl"/>
-              <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
-                <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-                <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
-              </div>
-            </div> 
+                <img src="Images/slider2.jpg" class="w-full rounded-2xl" />
+                <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
+                    <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                </div>
+            </div>
             <!-- Slider 3 -->
             <div id="slide3" class="carousel-item relative w-full lg:h-[550px]">
-              <img src="Images/slider3.jpg" class="w-full rounded-2xl" />
-              <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
-                <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-                <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
-              </div>
+                <img src="Images/slider3.jpg" class="w-full rounded-2xl" />
+                <div class="absolute flex gap-4 ml-8 transform -translate-y-1/2 left-5 right-5 bottom-4">
+                    <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                </div>
             </div>
-          </div>
-          <div class="w-full lg:w-[500px] lg:h-[165px] lg:absolute rounded-2xl mt-4 lg:-mt-52 lg:ml-24 lg:left-1/2 p-8 bg-[#131318]">
+        </div>
+        <div
+            class="w-full lg:w-[500px] lg:h-[165px] lg:absolute rounded-2xl mt-4 lg:-mt-52 lg:ml-24 lg:left-1/2 p-8 bg-[#131318]">
             <h4 class="text-white text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h4>
-            <p class="text-gray-500 lg:text-base mt-4">Thrilling video game capturing ice hockey excitement. Customize players, score epic goals, and dominate the rink </p>
+            <p class="text-gray-500 lg:text-base mt-4">Thrilling video game capturing ice hockey excitement. Customize
+                players, score epic goals, and dominate the rink </p>
         </div>
     </header>
+
+
+    <main class="container mx-auto mt-12 w-11/12 lg:w-10/12">
+        <!-- Hockey Club section -->
+        <section class="mt-24">
+            <div class="border-y-2 border-dashed mb-12 py-12">
+                <h1 class="text-[#131318] text-2xl lg:text-4xl text-center font-extrabold">Professional Hockeys Club
+                </h1>
+                <p class="text-[#13131899] text-center mt-6">Thrilling video game capturing ice hockey excitement. <br>
+                    Customize players, score epic goals, and dominate the rink</p>
+            </div>
+            <!-- Progress -->
+            <div class="flex flex-col lg:flex-row text-center gap-16 justify-center my-10">
+                <div>
+                    <div class="radial-progress rotate-180 text-[#FF4240]"
+                        style="--value:87; --size:7.5rem; --thickness: 1rem;" role="progressbar">
+                        <span class="rotate-180 text-[#131318] text-3xl font-extrabold">87%</span>
+                    </div>
+                    <h1 class="text-2xl font-semibold mt-6">Prayer Facility</h1>
+                    <p class="text-[#13131899] mt-4">Thrilling video game capturing <br>ice hockey excitement.</p>
+                </div>
+                <div>
+                    <div class="radial-progress rotate-180 text-[#49D293]"
+                        style="--value:95; --size:7.5rem; --thickness: 1rem;" role="progressbar">
+                        <span class="rotate-180 text-[#131318] text-3xl font-extrabold">95%</span>
+                    </div>
+                    <h1 class="text-2xl font-semibold mt-6">Experienced Coach</h1>
+                    <p class="text-[#13131899] mt-4">Thrilling video game capturing <br>ice hockey excitement.</p>
+                </div>
+                <div>
+                    <div class="radial-progress rotate-180 text-[#FFB546]"
+                        style="--value:90; --size:7.5rem; --thickness: 1rem;" role="progressbar">
+                        <span class="rotate-180 text-[#131318] text-3xl font-extrabold">90%</span>
+                    </div>
+                    <h1 class="text-2xl font-semibold mt-6">Senior Player</h1>
+                    <p class="text-[#13131899] mt-4">Thrilling video game capturing <br>ice hockey excitement.</p>
+                </div>
+                <div>
+                    <div class="radial-progress rotate-180 text-[#4C8DF1]"
+                        style="--value:80; --size:7.5rem; --thickness: 1rem;" role="progressbar">
+                        <span class="rotate-180 text-[#131318] text-3xl font-extrabold">80%</span>
+                    </div>
+                    <h1 class="text-2xl font-semibold mt-6">Training Ground</h1>
+                    <p class="text-[#13131899] mt-4">Thrilling video game capturing <br>ice hockey excitement.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <section class="mt-12 mb-12">
+            <div class="border-y-2 border-dashed mb-12 py-12">
+                <h1 class="text-[#131318] text-2xl lg:text-4xl text-center font-extrabold">Program Sections
+                </h1>
+                <p class="text-[#13131899] text-center mt-6">Thrilling video game capturing ice hockey excitement.
+                    Customize players <br> score epic goals, and dominate the rink</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                <div class="P-img w-full rounded-2xl px-6 lg:px-10">
+                    <h1 class="text-white text-3xl font-extrabold mt-6 lg:mt-24">Junior Program</h1>
+                    <p class="text-white font-medium mt-4">Hockey Hero offers engaging gameplay, stunning graphics, and a range of challenging scenarios to keep players hooked. Customize your player, strategize with teammates, and score.</p>
+                    <button class="btn text-white text-xl font-bold border-0 bg-[#FF4240] mt-6 mb-10 py-3 px-5">Register Now</button>
+
+                </div>
+                <div class="P-img2 w-full rounded-2xl px-6 lg:px-10">
+                    <h1 class="text-white text-3xl font-extrabold mt-6 lg:mt-24">Teenager Program</h1>
+                    <p class="text-white font-medium mt-4">Hockey Hero offers engaging gameplay, stunning graphics, and a range of challenging scenarios to keep players hooked. Customize your player, strategize with teammates, and score.</p>
+                    <button class="btn text-white text-xl font-bold border-0 bg-[#FF4240] mt-6 mb-10 py-3 px-5">Register Now</button>
+
+                </div>
+                <div class="P-img3 w-full lg:col-span-2 rounded-2xl px-6 lg:px-10">
+                    <h1 class="text-white text-3xl font-extrabold mt-6 lg:mt-24">Teenager Program</h1>
+                    <p class="text-white font-medium mt-4">Hockey Hero offers engaging gameplay,<br> stunning graphics, and a range of challenging scenarios to keep players hooked. <br>Customize your player, strategize with teammates, and score.</p>
+                    <button class="btn text-white text-xl font-bold border-0 bg-[#FF4240] mt-6 mb-10 py-3 px-5">Register Now</button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 
