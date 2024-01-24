@@ -24,4 +24,9 @@
     height: 24px;
     width: 48px;
 }
+.fa-envelope, .fa-phone{
+    color:#FF4240;
+    width: 24px;
+    height: 24px;
+}
 
